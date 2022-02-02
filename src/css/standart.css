@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 0, 234);
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col {
+    margin: 0 15px;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: -99999px;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 32px;
+}
+
+p {
+    font-size: 18px;
+}

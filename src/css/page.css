@@ -1,0 +1,53 @@
+header {
+    padding: 25px 0;
+}
+
+.header-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 32px;
+    color: cornflowerblue;
+}
+
+header .logo {
+    flex-grow: 1;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header-menu a {
+    display: block;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.custom h2 {
+    padding-bottom: 0;
+}
+
+.custom .item {
+    width: calc(100% / 3 - 30px);
+    min-width: 250px;
+    text-align: center;
+    padding: 15px 0;
+    flex-grow: 1;
+}
+
+.item3 h2 {
+    padding-top: 0;
+}
+
+footer .logo {
+    text-align: center;
+    padding: 25px 0;
+    color: rosybrown;
+}
