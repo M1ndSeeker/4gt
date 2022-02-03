@@ -1,0 +1,82 @@
+.evants {
+    background-image: url('./../img/stats-back.png');
+    padding: 40px 0;
+    position: relative;
+    
+    .container {
+        position: relative;
+        z-index: 10;
+    }
+
+    h2 {
+        padding-bottom: 40px;
+    }
+
+    h2, h4 {
+        color: @color_white;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: @color_berezovyi;
+        opacity: .3;
+    }
+}
+
+.evant {
+    box-sizing: border-box;
+    display: flex;
+    .size(12, 12, 15px);
+    background-color: rgba(16, 0, 54, .65);
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .date {
+        padding: 20px 15px;
+        text-transform: uppercase;
+        background-color: rgba(16, 0, 54, .7);
+        
+
+        .day, .year {
+            font-size: 30px;
+        }
+
+        .day, .month {
+            color: @color_berezovyi;
+        }
+
+        .month {
+            padding-top: 5px;
+        }
+
+        .year {
+            padding-top: 15px;
+            color: grey;
+        }
+    }
+
+    .content {
+        padding: 30px;
+        align-self: center;
+
+
+        h4 {
+            font-size: 20px;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+}

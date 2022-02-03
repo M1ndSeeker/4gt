@@ -1,0 +1,45 @@
+.best {
+    background-image: url('./../img/stats-back.png');
+    padding: 40px 0;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 10;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: #000;
+        opacity: .35;
+    }
+}
+
+.item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    .size(12, 4, 15px);
+    padding: 10px;
+    background-color: rgba(16, 0, 54, .55);
+
+    h3 , a {
+        padding: 20px 0;
+    }
+
+    a {
+        margin-top: auto;
+        align-self: center;
+        text-decoration: none;
+        color: @color_berezovyi;
+    }
+}

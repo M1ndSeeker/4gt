@@ -1,0 +1,20 @@
+@color_white: white;
+@color_berezovyi: rgb(0, 204, 204);
+@color_blue_dark: rgb(16, 0, 54);
+
+@column: 12;
+@offset_one_side: 15px;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -@offset_one_side;
+}
+
+.col {
+    margin: 0 @offset_one_side;
+}
+
+.size(@col: @column, @num, @offset: @offset_one_side) {
+    width: calc(100% / @col * @num - 2 * @offset);
+}
