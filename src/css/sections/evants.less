@@ -27,7 +27,7 @@
         right: 0;
         bottom: 0;
         z-index: 1;
-        background-color: @color_berezovyi;
+        background-color: fade(@color_berezovyi, 60%);
         opacity: .3;
     }
 }
@@ -36,7 +36,7 @@
     box-sizing: border-box;
     display: flex;
     .size(12, 12, 15px);
-    background-color: rgba(16, 0, 54, .65);
+    background-color: fade(@color_blue_dark, 70%);
 
     &:not(:last-child) {
         margin-bottom: 15px;
@@ -45,7 +45,7 @@
     .date {
         padding: 20px 15px;
         text-transform: uppercase;
-        background-color: rgba(16, 0, 54, .7);
+        background-color: fade(@color_blue_dark, 80%);
         
 
         .day, .year {
@@ -62,7 +62,7 @@
 
         .year {
             padding-top: 15px;
-            color: grey;
+            color: @color_grey;
         }
     }
 
