@@ -38,15 +38,26 @@
     display: flex;
     background-color: fade(@color_blue_dark, 70%);
 
+    @media  screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+    
+
     &:not(:last-child) {
         margin-bottom: 15px;
     }
 
     .date {
+        display: flex;
+        flex-direction: column;
         padding: 20px 15px;
         text-transform: uppercase;
         background-color: fade(@color_blue_dark, 80%);
-        
+
+        @media  screen and (max-width: 800px) {
+            flex-direction: row;
+            align-items: center;
+        }
 
         .day, .year {
             font-size: 30px;
@@ -58,12 +69,24 @@
 
         .month {
             padding-top: 5px;
+
+            @media  screen and (max-width: 800px) {
+                padding-top: 0;
+                margin: 0 10px;
+                align-self: flex-end;
+                line-height: 25px;
+            }
         }
 
         .year {
             padding-top: 15px;
             color: @color_grey;
+
+            @media  screen and (max-width: 800px) {
+                padding-top: 0;
+            }
         }
+        
     }
 
     .content {
