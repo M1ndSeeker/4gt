@@ -7,13 +7,19 @@
     }
 }
 
+.list {
+    &:extend(.g-row);
+}
+
 .item-n {
+    &:extend(.g-col);
+    .size(12, 3, 15px);
+
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     color: @color_white;
-    .size(12, 3, 15px);
-
+    
     .title, .text {
         text-align: center;
     }

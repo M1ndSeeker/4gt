@@ -6,14 +6,22 @@
 @column: 12;
 @offset_one_side: 15px;
 
-.row {
+.row() {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -@offset_one_side;
 }
 
-.col {
+.g-row {
+    .row();
+}
+
+.col() {
     margin: 0 @offset_one_side;
+}
+
+.g-col {
+    .col();
 }
 
 .size(@col: @column, @num, @offset: @offset_one_side) {

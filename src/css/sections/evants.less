@@ -2,19 +2,6 @@
     background-image: url('./../img/stats-back.png');
     padding: 40px 0;
     position: relative;
-    
-    .container {
-        position: relative;
-        z-index: 10;
-    }
-
-    h2 {
-        padding-bottom: 40px;
-    }
-
-    h2, h4 {
-        color: @color_white;
-    }
 
     &::before {
         content: '';
@@ -30,12 +17,25 @@
         background-color: fade(@color_berezovyi, 60%);
         opacity: .3;
     }
+    
+    .container {
+        position: relative;
+        z-index: 10;
+    }
+
+    h2 {
+        padding-bottom: 40px;
+    }
+
+    h2, h4 {
+        color: @color_white;
+    }
+    
 }
 
 .evant {
     box-sizing: border-box;
     display: flex;
-    .size(12, 12, 15px);
     background-color: fade(@color_blue_dark, 70%);
 
     &:not(:last-child) {

@@ -1,34 +1,19 @@
 .best {
     background-image: url('./../img/stats-back.png');
     padding: 40px 0;
-/*     position: relative;
+}
 
-    .container {
-        position: relative;
-        z-index: 10;
-    }
-
-    &::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-        background-color: #000;
-        opacity: .35;
-    } */
+.elements {
+    &:extend(.g-row);
 }
 
 .item {
+    &:extend(.g-col);
+    .size(12, 4, 15px);
+
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    .size(12, 4, 15px);
     padding: 10px;
     background-color: fade(@color_blue_dark, 70%);
     
